@@ -3,16 +3,9 @@ layer_type(::Potts) = "Potts"
 layer_type(::xReLU) = "xReLU"
 layer_type(::PottsGumbel) = "PottsGumbel"
 
-function construct_layer(layer_type::AbstractString, par::AbstractArray)
-    if layer_type == "Binary"
-        return Binary(par)
-    elseif layer_type == "Potts"
-        return Potts(par)
-    elseif layer_type == "xReLU"
-        return xReLU(par)
-    elseif layer_type == "PottsGumbel"
-        return PottsGumbel(par)
-    else
-        throw(ArgumentError("Unsupported layer type: $layer_type"))
-    end
-end
+construct_layer(layer_type::AbstractString, par::AbstractArray) = construct_layer(Val(Symbol(layer_type)), par)
+
+construct_layer(::Val{:Binary}, par::AbstractArray) = Binary(par)
+construct_layer(::Val{:Potts}, par::AbstractArray) = Potts(par)
+construct_layer(::Val{:xReLU}, par::AbstractArray) = xReLU(par)
+construct_layer(::Val{:PottsGumbel}, par::AbstractArray) = PottsGumbel(par)
