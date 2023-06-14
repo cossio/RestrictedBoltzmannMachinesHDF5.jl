@@ -27,7 +27,7 @@ loaded_rbm = load_rbm(path) # load RBM from saved file
 
 ## Related
 
-[RestrictedBoltzmannMachines](https://github.com/cossio/RestrictedBoltzmannMachines.jl), which defines the `RBM` object.
+[RestrictedBoltzmannMachines.jl](https://github.com/cossio/RestrictedBoltzmannMachines.jl) package, which defines the `RBM` object.
 
 ## Citation
 
