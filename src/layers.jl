@@ -1,6 +1,7 @@
 layer_type(::Binary) = "Binary"
 layer_type(::Potts) = "Potts"
 layer_type(::xReLU) = "xReLU"
+layer_type(::PottsGumbel) = "PottsGumbel"
 
 function construct_layer(layer_type::AbstractString, par::AbstractArray)
     if layer_type == "Binary"
