@@ -3,7 +3,6 @@ module RestrictedBoltzmannMachinesHDF5
 using HDF5: h5open
 using RestrictedBoltzmannMachines: RBM, Binary, Potts, xReLU
 using StandardizedRestrictedBoltzmannMachines: StandardizedRBM
-using PottsGumbelRBMLayers: PottsGumbel
 
 # Version of the file format used to save/load RBMs
 const FILE_FORMAT_VERSION = v"1.0.0"
@@ -15,5 +14,7 @@ include("generic_load.jl")
 include("layers.jl")
 include("rbm.jl")
 include("std.jl")
+
+include("potts_gumbel.jl")
 
 end # module
