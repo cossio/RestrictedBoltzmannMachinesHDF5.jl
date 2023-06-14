@@ -13,7 +13,7 @@ an error is thrown if the file already exists.
 """
 function save_rbm(path::AbstractString, rbm::RBM; overwrite::Bool=false)
     if !overwrite && isfile(path)
-        throw(IOError("File already exists: $path"))
+        error("File already exists: $path")
     end
     h5open(path, "w") do file
         write(file, FILE_FORMAT_HEADER, string(FILE_FORMAT_VERSION))

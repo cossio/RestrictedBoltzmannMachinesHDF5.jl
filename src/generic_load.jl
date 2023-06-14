@@ -12,9 +12,9 @@ load_rbm(path::AbstractString) = h5open(path, "r") do file
         elseif rbm_type == "StandardizedRBM"
             _load_standardized_rbm(path)
         else
-            throw(IOError("Unknown RBM type: $rbm_type"))
+            error("Unknown RBM type: $rbm_type")
         end
     else
-        throw(IOError("Unsupported format version: $format_version"))
+        error("Unsupported format version: $format_version")
     end
 end
