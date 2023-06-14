@@ -1,4 +1,4 @@
-_load_standardized_rbm(path::AbstractString) = h5open(path, "r") do file
+_load_rbm(path::AbstractString, ::Val{:StandardizedRBM}) = h5open(path, "r") do file
     offset_v = read(file, "offset_v")
     offset_h = read(file, "offset_h")
     scale_v = read(file, "scale_v")

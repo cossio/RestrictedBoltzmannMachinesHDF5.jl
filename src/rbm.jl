@@ -1,4 +1,4 @@
-_load_rbm(path::AbstractString) = h5open(path, "r") do file
+_load_rbm(path::AbstractString, ::Val{:RBM}) = h5open(path, "r") do file
     w = read(file, "weights")
     visible = construct_layer(read(file, "visible_type"), read(file, "visible_par"))
     hidden = construct_layer(read(file, "hidden_type"), read(file, "hidden_par"))
