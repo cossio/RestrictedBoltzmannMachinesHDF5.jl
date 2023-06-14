@@ -22,7 +22,7 @@ function save_rbm(path::AbstractString, rbm::RBM; overwrite::Bool=false)
         write(file, "visible_par", rbm.visible.par)
         write(file, "hidden_par", rbm.hidden.par)
         write(file, "visible_type", layer_type(rbm.visible))
-        write(file, "hidden_type", layer_type(rbm.visible))
+        write(file, "hidden_type", layer_type(rbm.hidden))
     end
     return path
 end

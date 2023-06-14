@@ -16,15 +16,15 @@ function save_rbm(path::AbstractString, rbm::StandardizedRBM; overwrite::Bool=fa
     h5open(path, "w") do file
         write(file, FILE_FORMAT_HEADER, string(FILE_FORMAT_VERSION))
         write(file, "rbm_type", "StandardizedRBM")
-        write(file, "offset_v", rbm.offset_v)
-        write(file, "offset_h", rbm.offset_h)
-        write(file, "scale_v", rbm.scale_v)
-        write(file, "scale_h", rbm.scale_h)
         write(file, "weights", rbm.w)
         write(file, "visible_par", rbm.visible.par)
         write(file, "hidden_par", rbm.hidden.par)
         write(file, "visible_type", layer_type(rbm.visible))
-        write(file, "hidden_type", layer_type(rbm.visible))
+        write(file, "hidden_type", layer_type(rbm.hidden))
+        write(file, "offset_v", rbm.offset_v)
+        write(file, "offset_h", rbm.offset_h)
+        write(file, "scale_v", rbm.scale_v)
+        write(file, "scale_h", rbm.scale_h)
     end
     return path
 end
