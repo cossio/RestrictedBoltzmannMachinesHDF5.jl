@@ -9,7 +9,9 @@ function construct_layer(layer_type::AbstractString, par::AbstractArray)
         return Potts(par)
     elseif layer_type == "xReLU"
         return xReLU(par)
+    elseif layer_type == "PottsGumbel"
+        return PottsGumbel(par)
     else
-        throw(ArgumentError("Unknown layer type: $layer_type"))
+        throw(ArgumentError("Unsupported layer type: $layer_type"))
     end
 end
