@@ -15,6 +15,4 @@ include("layers.jl")
 include("rbm.jl")
 include("std.jl")
 
-include("potts_gumbel.jl")
-
 end # module
