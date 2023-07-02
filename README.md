@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/cossio/RestrictedBoltzmannMachinesHDF5.jl/blob/master/LICENSE.md)
 ![](https://github.com/cossio/RestrictedBoltzmannMachinesHDF5.jl/workflows/CI/badge.svg)
-[![codecov](https://codecov.io/gh/cossio/RestrictedBoltzmannMachinesHDF5.jl/branch/master/graph/badge.svg?token=90I3AJIZIG)](https://codecov.io/gh/cossio/RestrictedBoltzmannMachinesHDF5.jl)
+[![codecov](https://codecov.io/gh/cossio/RestrictedBoltzmannMachinesHDF5.jl/branch/main/graph/badge.svg?token=0CH7OdZvPv)](https://codecov.io/gh/cossio/RestrictedBoltzmannMachinesHDF5.jl)
 
 Save and load [Restricted Boltzmann machine](https://github.com/cossio/RestrictedBoltzmannMachines.jl) objects as [HDF5](https://github.com/JuliaIO/HDF5.jl) files.
 
