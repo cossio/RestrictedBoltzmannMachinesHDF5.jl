@@ -1,7 +1,7 @@
 module RestrictedBoltzmannMachinesHDF5
 
 using HDF5: h5open
-using RestrictedBoltzmannMachines: RBM, Binary, Potts, xReLU
+using RestrictedBoltzmannMachines: RBM, Binary, Spin, Potts, xReLU
 using StandardizedRestrictedBoltzmannMachines: StandardizedRBM
 
 # Version of the file format used to save/load RBMs

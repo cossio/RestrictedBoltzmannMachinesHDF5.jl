@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. The format 
 
 ## Unreleased
 
+## v2.1.0-DEV
+
+- Support `Spin` layers.
+
 ## v2.0.0
 
 - Move PottsGumbelRBMLayers methods to its own package (PottsGumbelRBMLayers.jl) instead of here.
