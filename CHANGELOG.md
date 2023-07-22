@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ## Unreleased
 
-## v2.1.0-DEV
+## v2.1.0
 
 - Support `Spin` layers.
 
