@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ## Unreleased
 
-## v2.2.0
+## v2.2.0 - 2023-08-03
 
 - Support `Gaussian` layers.
 
