@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. The format 
 
 ## Unreleased
 
+## v2.2.0
+
+- Support `Gaussian` layers.
+
 ## v2.1.0
 
 - Support `Spin` layers.
