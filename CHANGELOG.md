@@ -4,19 +4,20 @@ All notable changes to this project will be documented in this file. The format 
 
 ## Unreleased
 
-## v2.2.0 - 2023-08-03
+## 2.2.0 - 2023-08-03
 
 - Support `Gaussian` layers.
+- Register at https://github.com/cossio/CossioJuliaRegistry.
 
-## v2.1.0
+## 2.1.0
 
 - Support `Spin` layers.
 
-## v2.0.0
+## 2.0.0
 
 - Move PottsGumbelRBMLayers methods to its own package (PottsGumbelRBMLayers.jl) instead of here.
 
-## v1.0.0
+## 1.0.0
 
 - This CHANGELOG file.
 - Release v1.0.0 and registered package in General.
