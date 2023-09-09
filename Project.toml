@@ -1,7 +1,7 @@
 name = "RestrictedBoltzmannMachinesHDF5"
 uuid = "d76020e8-6658-45fa-bb6d-0aaddbb4b5e5"
 authors = ["Jorge Fernandez-de-Cossio-Diaz <j.cossio.diaz@gmail.com>"]
-version = "2.2.2-DEV"
+version = "2.2.2"
 
 [deps]
 HDF5 = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
@@ -9,7 +9,7 @@ RestrictedBoltzmannMachines = "12e6b396-7db5-4506-8cb6-664a4fe1e50e"
 StandardizedRestrictedBoltzmannMachines = "c8d9fdc7-1808-4fba-8c97-f848504396a5"
 
 [compat]
-HDF5 = "0.16"
+HDF5 = "0.16, 0.17"
 RestrictedBoltzmannMachines = "3"
 StandardizedRestrictedBoltzmannMachines = "4"
 julia = "1.9"
