@@ -1,4 +1,4 @@
-_load_rbm(path::AbstractString, ::Val{:StandardizedRBM}) = h5open(path, "r") do file
+function _load_rbm(file::HDF5.File, ::Val{:StandardizedRBM})
     offset_v = read(file, "offset_v")
     offset_h = read(file, "offset_h")
     scale_v = read(file, "scale_v")

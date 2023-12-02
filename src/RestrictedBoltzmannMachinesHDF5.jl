@@ -1,5 +1,6 @@
 module RestrictedBoltzmannMachinesHDF5
 
+import HDF5
 using HDF5: h5open
 using RestrictedBoltzmannMachines: RBM, Binary, Spin, Potts, Gaussian, xReLU
 using StandardizedRestrictedBoltzmannMachines: StandardizedRBM
