@@ -1,5 +1,8 @@
 # RestrictedBoltzmannMachinesHDF5 Julia package
 
+> [!WARNING]
+> This package is deprecated. Its functionality has been incorporated in the [`RestrictedBoltzmannMachines`](https://github.com/cossio/RestrictedBoltzmannMachines.jl) package.
+
 Save and load [Restricted Boltzmann machine](https://github.com/cossio/RestrictedBoltzmannMachines.jl) objects as [HDF5](https://github.com/JuliaIO/HDF5.jl) files.
 
 ## Installation
