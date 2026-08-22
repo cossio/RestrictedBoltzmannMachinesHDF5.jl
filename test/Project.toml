@@ -5,4 +5,6 @@ StandardizedRestrictedBoltzmannMachines = "c8d9fdc7-1808-4fba-8c97-f848504396a5"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [compat]
-Aqua = "0.6,0.7"
+Aqua = "0.6,0.7,0.8"
+RestrictedBoltzmannMachines = "7.1.0"
+StandardizedRestrictedBoltzmannMachines = "4.3.0"
